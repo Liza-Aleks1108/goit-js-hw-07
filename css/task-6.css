@@ -1,3 +1,56 @@
-.box{
-    
+#controls{
+    display: flex;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    background: #f6f6fe;
+    margin-bottom: 16px;
+}
+
+input {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    text-align: center;
+
+    width: 150px;
+    height: 40px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px 16px;
+
+    width: 120px;
+    height: 40px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button[data-create] {
+    background: #4e75ff;
+    border: #4e75ff;
+}
+
+button[data-destroy] {
+    background: #ff4e4e;
+    border: #ff4e4e;
+}
+
+#boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
