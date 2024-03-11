@@ -10,9 +10,11 @@ const createBtn = controlsEl.querySelector('[data-create]');
 const destroyBtn = controlsEl.querySelector('[data-destroy]');
 const boxesEl = document.querySelector('#boxes');
 
-let width = 30;
-let height = 30;
 function createBoxes(amount) {
+  destroyBoxes();
+  let width = 30;
+  let height = 30;
+
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
 
